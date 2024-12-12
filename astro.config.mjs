@@ -9,5 +9,5 @@ import solidJs from "@astrojs/solid-js"
 export default defineConfig({
   site: "https://florinelef.github.io",
   integrations: [mdx(), sitemap(), solidJs(), tailwind({ applyBaseStyles: false })],
-  base: "florine.github.io"
+  // base: "" // Retirez ou commentez cette ligne
 })
