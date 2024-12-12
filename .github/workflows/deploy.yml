@@ -20,14 +20,20 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 20
-      - name: Install dependencies
-        run: pnpm install
+      - name: Install, build, and upload your site
+        uses: pnpm/action-setup@v2
+        with:
+          # path: . # The root location of your Astro project inside the repository. (optional)
+          # node-version: 20 # The specific version of Node that should be used to build your site. Defaults to 20. (optional)
+          # package-manager: pnpm@latest # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
+          version: 8
       - name: Build the site
         run: pnpm astro build
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v2
         with:
           path: ./dist # Chemin où Astro génère les fichiers
+
   
   deploy:
     needs: build
