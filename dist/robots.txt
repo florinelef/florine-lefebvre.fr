@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://florine-lefebvre.fr/sitemap-index.xml
