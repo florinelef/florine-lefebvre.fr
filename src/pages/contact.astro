@@ -1,0 +1,77 @@
+---
+import { getCollection } from "astro:content"
+import PageLayout from "@layouts/PageLayout.astro"
+import ArrowCard from "@components/ArrowCard"
+import StackCard from "@components/StackCard.astro"
+import { SITE, SOCIALS } from "@consts"
+import TwinklingStars from "@components/TwinklingStars.astro"
+import MeteorShower from "@components/MeteorShower.astro"
+---
+
+<PageLayout title="Contact" description={SITE.DESCRIPTION}>
+    
+    <!-- Light Mode: Particles -->
+    <div class='absolute inset-0 block dark:hidden'>
+        <div id='particles1' class='fixed inset-0'></div>
+        <div id='particles2' class='fixed inset-0'></div>
+        <div id='particles3' class='fixed inset-0'></div>
+    </div>
+    
+    <!-- Dark Theme: Stars -->
+    <div class='absolute inset-0 bg-black hidden dark:block'>
+        <div id='stars1' class='fixed inset-0'></div>
+        <div id='stars2' class='fixed inset-0'></div>
+        <div id='stars3' class='fixed inset-0'></div>
+    </div>
+    
+    <!-- Dark Theme: Twinkling Stars / Metors -->
+    <div id="galaxy" class="fixed inset-0">
+        <div class="hidden dark:block">
+            <TwinklingStars/>
+            <MeteorShower/>
+        </div>
+    </div>
+    
+    <script is:inline src="/js/bg.js"></script>
+    
+    <!-- Contact Section -->
+    <section class="relative h-screen w-full">
+        <div id="planetcont" class='animate absolute inset-0 top-1/4 overflow-hidden'>
+            <div class="relative">
+                <div class="mx-auto max-w-screen-sm p-4 space-y-12 pb-12">
+                    <aside class="relative">
+                        <img id="contact" class="rounded-2xl float-right" src="/contact.jpg" width="40%" height="40%"/>
+                    </aside>
+                    <article id="contactTitle">
+                        <h1>
+                            Contact 📜
+                        </h1>
+                        <p>
+                            Vous souhaitez me contacter ?
+                        </p>
+                    </article>
+                    <div class="grid grid-cols-4 gap-y-2 mt-4 auto-cols-min">
+                        {SOCIALS.map(social => (
+                            <div class="col-span-1 flex items-center gap-1">
+                                <span class="whitespace-nowrap truncate">
+                                    {social.NAME}
+                                </span>
+                            </div>
+                            <div class="col-span-3 truncate">
+                                <a href={social.HREF} target="_blank" class="w-fit col-span-3 group flex gap-1 items-center underline decoration-[.5px] decoration-black/25 dark:decoration-white/50 hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
+                                    <span class="text-black/75 dark:text-white/75 group-hover:text-black group-hover:dark:text-white blend">
+                                        {social.TEXT}
+                                    </span>
+                                </a>
+                            </div>
+                        ))}
+                    </div>
+                    <div>
+                        <a id="cv-button" class="p-3 ml-1 text-sm items-center border rounded hover:bg-black/5 hover:dark:bg-white/10 border-black/15 dark:border-white/20 transition-colors duration-300 ease-in-out" href="cv_dec-2024.pdf">Voir mon CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</PageLayout>
+        

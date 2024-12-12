@@ -1,0 +1,69 @@
+---
+import PageLayout from "@layouts/PageLayout.astro"
+import { SITE, SOCIALS } from "@consts"
+import TwinklingStars from "@components/TwinklingStars.astro"
+import MeteorShower from "@components/MeteorShower.astro"
+---
+
+<PageLayout title="Parcours" description={SITE.DESCRIPTION}>
+    
+    <!-- Light Mode: Particles -->
+    <div class='absolute inset-0 block dark:hidden'>
+        <div id='particles1' class='fixed inset-0'></div>
+        <div id='particles2' class='fixed inset-0'></div>
+        <div id='particles3' class='fixed inset-0'></div>
+    </div>
+    
+    <!-- Dark Theme: Stars -->
+    <div class='absolute inset-0 bg-black hidden dark:block'>
+        <div id='stars1' class='fixed inset-0'></div>
+        <div id='stars2' class='fixed inset-0'></div>
+        <div id='stars3' class='fixed inset-0'></div>
+    </div>
+    
+    <!-- Dark Theme: Twinkling Stars / Metors -->
+    <div id="galaxy" class="fixed inset-0">
+        <div class="hidden dark:block">
+            <TwinklingStars/>
+            <MeteorShower/>
+        </div>
+    </div>
+    
+    <script is:inline src="/js/bg.js"></script>
+    
+    <div class="relative">
+        <div class="mx-auto max-w-screen-sm p-5 space-y-24 pb-16">
+            
+            <section></section>
+            
+            <!-- About Section -->
+            <section class="relative space-y-5">
+                <article class="pb-0">
+                    <h1>Parcours 📕</h1>
+                    <h2>Formations</h2>
+                </article>
+                <div class="grid grid-cols-4 grid-flow-col gap-4 border rounded-xl p-3 bg-white dark:bg-black">
+                    <aside class="col-span-1">
+                        <h6><strong><code>2023-2026</code></strong></h6>
+                    </aside>
+                    <div class="col-span-3">
+                        <h6><strong><code>BUT Informatique</code></strong></h6>
+                        <p>Réalisation d'applications : conception, développement, validation.</p>
+                        <p><em>IUT de Lille, Villeneuve d'Ascq</em></p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-4 grid-flow-col gap-4 border rounded-xl p-3 bg-white dark:bg-black">
+                    <aside class="col-span-1">
+                        <h6><strong><code>2022-2023</code></strong></h6>
+                    </aside>
+                    <div class="col-span-3">
+                        <h6><strong><code>Baccalauréat Général</code></strong></h6>
+                        <p>Spécialité Mathématiques et Informatique, option Mathématiques expertes</p>
+                        <p><em>Lycée Notre-Dame de la Providence, Orchies</em></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+</PageLayout>
