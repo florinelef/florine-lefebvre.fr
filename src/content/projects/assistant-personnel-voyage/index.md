@@ -9,8 +9,12 @@ tags:
 - BUT Informatique
 repoUrl: https://github.com/florinelef/but.sae201-2
 ---
+## Visuel
 
-### Description
+![](/screen_truev.png)
+*Capture d’écran de la maquette basse fidélité de notre application.*
+
+## Description
 
 Ce projet consiste à l’élaboration d’un assistant personnel de voyage en java. 
 Pour cette SAÉ, il faut créer un logiciel permettant de calculer, visualiser et comparer des itinéraires pour un utilisateur donné en considérant un ensemble de villes reliées par un réseau de transport multimodal (routier, ferroviaire, aérien). 
@@ -20,7 +24,7 @@ Nous devons mobiliser nos connaissances en algorithmie et en java, mais aussi en
 
 Pour trouver le meillleur chemin, nous avons du créer un graphe représentant le réseau et pondérer ses arêtes avec les différents coûts, puis utiliser l'algorithme des kpcc (k plus courts chemins).
 
-### Mon bilan personnel
+## Mon bilan personnel
 
 Mon principal point fort est l'algorithmie et le java, en effet, j’ai fait la majorité du code pour la partie POO et graphe (application des algorithmes). J’ai su organiser le travail et développer sur une base structurée que nous avons établi ensemble au préalable. 
 

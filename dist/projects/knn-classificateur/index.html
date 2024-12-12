@@ -40,7 +40,28 @@ Revenir aux projets
         <use href="/ui.svg#book-open"/>
       </svg>
       {readingTime(body)}
-    </div> --> </div> <h1 class="text-3xl font-semibold text-black dark:text-white mt-2"> Classificateur </h1> <div class="mt-1"> Logiciel de classement de données utilisant l&#39;algorithme k-NN </div>  </div> </div>   </div> </div> <div class="flex-1 py-5"> <div class="w-full h-full mx-auto px-5 max-w-screen-md">   <div class="animate"> <div> <article>  </article> <!-- <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+    </div> --> </div> <h1 class="text-3xl font-semibold text-black dark:text-white mt-2"> Classificateur </h1> <div class="mt-1"> Logiciel de classement de données utilisant l&#39;algorithme k-NN </div>  </div> </div>   </div> </div> <div class="flex-1 py-5"> <div class="w-full h-full mx-auto px-5 max-w-screen-md">   <div class="animate"> <div> <article> <h2 id="visuel">Visuel</h2>
+<p><img src="/screen_knn.png" alt="">
+<em>Interface graphique principale contenant le graphe des données et toutes les fonctionnalités.</em></p>
+<h2 id="description">Description</h2>
+<p>Ce projet effectué en deuxième année de BUT Informatique nous impose de réalisé, en groupe de 4, une implémentation de l’algorithme k-NN (k plus proches voisins) pour permettre
+de trouver la catégorie d’une donnée en fonction des autres. Nous avons du développer cet algorithme de classification en Java, et utiliser Java FX pour l’affichage
+graphique. Cette réalisation nous a indroduit à l’utilisation de patron de conception (design patterns) comme le MVC (Modèle, Vue, Contrôleur) ou Observable Observer.</p>
+<h3 id="spécification">Spécification</h3>
+<p>Le projet était composé en deux jalons, et chacun disposait d’attendus spécifiques :</p>
+<ul>
+<li><strong>Chargement</strong> : Les données seront fournies sous forme de fichiers CSV (Comma Separated Values) que le programme devra pouvoir charger pour construire le modèle;</li>
+<li><strong>Modélisation</strong> : Plusieurs jeux de données seront fournis (ex : des Iris, les Pokemons). Chaque jeu de données devra être modélisé de façon appropriée dans le projet, mais les fonctionnalités demandées (dans la présente liste) devront être aussi indépendantes que possible de ces données;</li>
+<li><strong>Affichage</strong> : Une fois les données chargées, on doit pouvoir les visualiser sous forme de nuage de points en projetant sur deux attributs à choisir intéractivement. Le type de ces attributs peut être numérique ou énuméré (un ensemble fini de valeurs discrètes). Dans le cas de valeurs énumérées, le programme choisira un ordre quelconque des valeurs. Le programme doit permettre de visualiser sur le nuage de points la catégorie des données, par exemple avec des couleurs par catégorie. Cette catégorie fait partie des informations présentes dans le jeu de données fournies. Elle peut être choisie par l’utilisateur comme l’un des attributs booléen ou de type énuméré, une catégorie par défaut est choisie au chargement;</li>
+<li><strong>Classification</strong> : Le programme doit permettre de construire un modèle de classification des données pour la catégorie sélectionnée à l’aide de l’algorithme kNN pour une valeur de k et une distance, que l’utilisateur peut choisir. Cette classification doit permettre de choisir la catégorie la plus probable pour un nouveau point (saisi par l’utilisateur), dont la catégorie est inconnue. Le nouveau point doit être ajouté au nuage de points, de façon à ce qu’il apparaisse clairement, ainsi que sa catégorie;</li>
+<li><strong>Distance</strong> : Dans un deuxième temps, l’utilisateur pourra choisir en plus de la distance (euclidienne et de Manhattan au moins) les attributs à utiliser pour le calcul de la distance entre deux données, et permettre l’utilisation de pondérations pour augmenter l’importance de certains attributs.</li>
+<li><strong>Qualité</strong> : La robustesse de votre classification doit être calculée par rapport à vos données, et accessible dans votre interface, en précisant la méthode d’évaluation. Dans un deuxième temps, le logiciel permettra à l’utilisateur de trouver le meilleur k possible étant donnés une catégorie et une distance;</li>
+<li><strong>Interaction</strong> : Sélectionner dans le nuage un point pour afficher la donnée qu’il représente (toutes les valeurs de ses attributs et sa catégorie). Optionnellement, le passage de la souris sur un point du nuage affichera en infobulle la donnée qu’il représente.</li>
+</ul>
+<h2 id="mon-apprentissage-sur-ce-projet">Mon apprentissage sur ce projet</h2>
+<p>Grâce à ce projet, j’ai pu découvrir le pair programming que j’ai beaucoup pratiqué.
+Il nous a été très utile notamment pour la généricité totale (le logiciel fonctionne avec n’importe quel fichier CSV, même ceux qu’il ne connaît pas).</p>
+<p>Avoir participé à l’implémentation l’algorithme k-NN avec mes coéquipiers m’a appris que j’avais les capacités d’accomplir ce genre de défis qu’auparavent je trouvais inatteignables pour mon niveau.</p> </article> <!-- <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
     <a href={`/${prev.collection}/${prev.slug}`} class="group p-4 gap-3 flex items-center border rounded-lg hover:bg-black/5 hover:dark:bg-white/10 border-black/15 dark:border-white/20 blend">
       <div class="order-2 w-full h-full group-hover:text-black group-hover:dark:text-white blend">
         <div class="flex flex-wrap gap-2">

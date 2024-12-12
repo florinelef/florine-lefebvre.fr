@@ -8,14 +8,18 @@ tags:
 - BUT Informatique
 repoUrl: https://github.com/florinelef/but.sae102
 ---
+## Visuel
 
-### Description
+![](/screen_jeu_ijava.png)
+*Illustration d’un passage de notre jeu ludo-pédagogique créé lors de ce projet.*
+
+## Description
 
 L’objectif principal de cette SAÉ est de créer un jeu ludo-pédagogique en ijava en mobilisant les connaissances apprises tout au long du premier semestre. Ce projet se passe en binôme. Nous avons choisi d’appeler notre jeu “Question à Combats Multiples” et voici un résumé du jeu : 
 
 *“On suit l’histoire d’un cancre (le/la joueur.euse) qui souhaite devenir meilleur à l’école, pour cela on doit enchaîner des combats présentés sous forme de questions. Chaque boss représente une matière. On possède différentes stats comme l’attaque (nombre de point de vie qu’on inflige au boss lorsqu’on répond correctement), les points de vies et le combo (qui permet d’augmenter l’attaque) qui s’incrémente à chaque bonne réponse mais se réinitialise lors d’une mauvaise réponse. Le but du jeu est de vaincre le boss final.”*
 
-### Mon bilan personnel
+## Mon bilan personnel
 
 Ma plus grande réussite et mon plus grand point fort c’est d’avoir réussi à répondre à tous les attendus de ce projet sans grande difficulté, que ce soit au niveau de la modularité, la clarté et la qualité du code, mais aussi de l’externalisation des données, de la persistance des données (sauvegarde), du contrôle de saisie sans oublier l’implémentation des tests.
 

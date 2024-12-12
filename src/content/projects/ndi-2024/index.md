@@ -11,8 +11,12 @@ tags:
 repoUrl: https://github.com/florinelef/ndi-tpdevweb
 demoUrl: https://seastem.netlify.app/
 ---
+## Visuel
 
-### Description
+![](/screen_ndi2024.png)
+*Plateau du jeu symbolisant la carte du monde et ses océans*
+
+## Description
 
 Ce projet s'est déroulé lors de la <a href="https://www.nuitdelinfo.com/">nuit de l'info 2024</a>.
 Nous étions en équipe de 4, et nous avons eu de 16h39 à 08h04 (15h25) pour réfléchir, concevoir, créer et poffiner notre projet.
@@ -22,7 +26,7 @@ Nous avons choisis de partir sur un jeu de gestion des océans : au fil du temps
 Votre rôle, la maintenir en vie le plus longtemps possible en prenant les bonnes décisions, ou en répondant aux bonnes questions !
 Chaque océan et chaque question amène vers des informations supplémentaires sur le sujet.
 
-### Technologies utilisées
+## Technologies utilisées
 
 Pour concevoir Seastem Inc., nous avons utilisé Astro, avec du javascript et typescript, avec du HTML et CSS.
 Je me suis concentrée sur le HTML (par l'intermédiaire des fichiers .astro) et le CSS.

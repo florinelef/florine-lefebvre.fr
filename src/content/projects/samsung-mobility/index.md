@@ -10,8 +10,12 @@ tags:
 demoUrl: https://lonyyy.github.io/samsung-mobility/
 repoUrl: https://github.com/florinelef/but.sae105-6
 ---
+## Visuel
 
-### Description
+![](/screen_samsung_mobility.png)
+*Page d’accueil du site web de Samsung Mobility*
+
+## Description
 Ce projet consiste à l’élaboration d’un site web répondant aux besoins de mobilités requis au préalable d’une grande entreprise choisie. Il se passe en groupe de 3 ou 4 (4 pour notre part) et l’entreprise que nous avons choisie est Samsung (d’où le nom du projet : Samsung Mobility).
 
 L’objectif du projet est donc de fournir une plateforme de covoiturage sous forme de site web (en html et css uniquement) pour notre entreprise. Elle est par ailleurs destinée aux employés de l’entreprise uniquement, pour leur permettre de covoiturer ensemble par exemple quand ils vont au travail. Pour faire le site, on a utilisé visual studio code pour coder, puis github pour héberger le site. Pour le questionnaire on a utilisé google forms.
@@ -24,7 +28,7 @@ Tous ces fichiers sont disponibles à ce lien, ainsi que la maquette du site.
 
 > https://github.com/florinelef/but.sae105-6/tree/main/rendus
 
-### Mon bilan personnel
+## Mon bilan personnel
 Mes points fort sur ce projet est d’avoir réussi à correctement utiliser le css pour rendre le site beau et intuitif, utiliser des flexbox et des grid (en css) pour structurer correctement certaines pages dont le formulaire de contact pour rendre ergonomique la saisie de données dans le site, bien diviser les éléments de la page d’accueil en plusieurs sections et sous sections pour rendre cette dernière plus lisible et agréable, bien communiquer avec les membres de mon équipe pour pouvoir travailler de façon plus rigoureuse et professionnelle et d’avoir réussi à prendre des décisions importantes pour la création du site web tout en entendant les propositions et décisions de mon équipe.
 
 Les difficultés principales que j’ai eu sur cette SAÉ étaient d’inventer les besoins de mobilité des employés et leur personas ainsi que de retranscrire et comprendre ces besoins. Ces difficultés sont assez éloignées du côté informatique du travail demandé.
