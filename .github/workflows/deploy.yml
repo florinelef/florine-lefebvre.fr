@@ -26,7 +26,7 @@ jobs:
       - name: Debug build output
         run: ls -al ./dist # Vérifie le dossier de sortie
       - name: Upload Artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./dist
 
