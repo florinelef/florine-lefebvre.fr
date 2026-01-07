@@ -7,7 +7,7 @@ tags:
 - HTML
 - CSS
 - JavaScript
-- API
+- MatterJS
 repoUrl: https://github.com/florinelef/lespetitsjeux
 demoUrl: https://jeux.florine-lefebvre.fr/
 ---
